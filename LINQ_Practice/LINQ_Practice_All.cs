@@ -30,7 +30,7 @@ namespace LINQ_Practice
         [TestMethod]
         public void DoAllCohortsHaveTwoOrMoreJuniorInstructors()
         {
-            var doAll = PracticeData.Select(c => (c.JuniorInstructors.Count()) >= 2).All(ji => ji);
+            var doAll = PracticeData.Select(c => (c.JuniorInstructors.Count()) >= 2).All(ji => ji == true);
             Assert.IsTrue(doAll); //<-- change false to doAll
         }
 
